@@ -9,13 +9,12 @@ server:
     context-path: '/forex-rate-service'
 eureka:
   instance:
-    hostname: 'localhost'
     preferIpAddress: true
   client:
     registerWithEureka: true
     fetchRegistry: false
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+      defaultZone: ${EUREKA_URI:http://eureka-server:8761/eureka}
 app:
   url: 'https://openexchangerates.org/api/latest.json'
   appId: 'cb11e9b995994725bb5de0fdb0534e86'
