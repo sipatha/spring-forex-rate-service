@@ -11,7 +11,7 @@ Creating Docker Image
 Run Docker Image
 -
 
-`docker run -t spring-demo/forex-rate-service --network spring-demo`
+`docker run --network=spring-demo -i -t -d spring-demo/forex-rate-service`
 
 Accessing The Web Service
 -
